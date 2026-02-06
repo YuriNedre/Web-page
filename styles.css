@@ -1,0 +1,26 @@
+.whatsapp-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 10px 16px;
+    margin-top: 6px;
+
+    background-color: #25D366;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+
+    border-radius: 6px;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.whatsapp-button:hover {
+    background-color: #1ebe5d;
+    transform: translateY(-1px);
+}
+
+.whatsapp-button:active {
+    transform: translateY(0);
+}
