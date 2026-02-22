@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🚗</text></svg>">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Mobile Detailing TX - Premium Car Detailing Services in Austin & Round Rock</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;600;700&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Top Bar -->
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="topbar-phone" href="tel:+15127362309" aria-label="Call or text 512-736-23-09">
+        📱 <span class="topbar-label">Text / Call:</span> <span class="topbar-number">512-736-23-09</span>
+      </a>
+
+      <a
+        class="topbar-whatsapp"
+        href="https://wa.me/15127362309?text=Hi!%20I%20would%20like%20to%20book%20mobile%20detailing."
+        target="_blank"
+        rel="noopener"
+        aria-label="Start WhatsApp chat"
+      >
+        Start WhatsApp chat
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="logo-container">
+          <img src="Mobile_Detailing_TX_LLC.png" alt="Mobile Detailing TX Logo">
+        </div>
+        <h1>Premium Mobile Detailing</h1>
+        <p class="hero-subtitle">We Come to You</p>
+        <p class="hero-description">
+          Experience professional automotive detailing at your doorstep. Licensed, insured, and dedicated to making your vehicle look showroom-ready anywhere in Central Texas.
+        </p>
+        <a href="#contact" class="cta-button">Get Started</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <div class="container">
+      <h2 class="section-title">Our Services</h2>
+      <p class="section-subtitle">Professional detailing packages tailored to your vehicle's needs</p>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">🚗</div>
+          <h3 class="service-name">Exterior Wash</h3>
+          <div class="service-price">From $100</div>
+          <p class="service-description">
+            Complete exterior cleaning including hand wash, tire shine, and window cleaning for a brilliant finish.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">✨</div>
+          <h3 class="service-name">Interior Detailing</h3>
+          <div class="service-price">From $100</div>
+          <p class="service-description">
+            Deep interior cleaning with vacuuming, surface treatment, and conditioning for a fresh cabin.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">💎</div>
+          <h3 class="service-name">Full Detail</h3>
+          <div class="service-price">From $150</div>
+          <p class="service-description">
+            Complete inside and outside detailing package for the ultimate showroom appearance.
+          </p>
+        </div>
+      </div>
+
+      <div class="price-note">
+        <p><strong>Note:</strong> Final pricing depends on vehicle size and condition. We'll provide an accurate quote based on your specific needs.</p>
+      </div>
+
+      <div class="requirements">
+        <p>🔌 <strong>We just need:</strong> Access to water and electrical outlet at your location</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <h2 class="section-title">Our Work</h2>
+      <p class="section-subtitle">See the quality and attention to detail in every project</p>
+
+      <div class="carousel-container">
+        <button class="carousel-btn carousel-prev" onclick="moveCarousel(-1)">&#10094;</button>
+        <div class="carousel-wrapper">
+          <div class="carousel-track">
+            <div class="carousel-item"><img src="1.png" alt="Detailing work example 1"></div>
+            <div class="carousel-item"><img src="2.png" alt="Detailing work example 2"></div>
+            <div class="carousel-item"><img src="3.png" alt="Detailing work example 3"></div>
+            <div class="carousel-item"><img src="4.png" alt="Detailing work example 4"></div>
+            <div class="carousel-item"><img src="5.png" alt="Detailing work example 5"></div>
+            <div class="carousel-item"><img src="6.png" alt="Detailing work example 6"></div>
+            <div class="carousel-item"><img src="7.png" alt="Detailing work example 7"></div>
+            <div class="carousel-item"><img src="8.png" alt="Detailing work example 8"></div>
+            <div class="carousel-item"><img src="9.png" alt="Detailing work example 9"></div>
+            <div class="carousel-item"><img src="10.png" alt="Detailing work example 10"></div>
+            <div class="carousel-item"><img src="11.png" alt="Detailing work example 11"></div>
+            <div class="carousel-item"><img src="12.png" alt="Detailing work example 12"></div>
+          </div>
+        </div>
+        <button class="carousel-btn carousel-next" onclick="moveCarousel(1)">&#10095;</button>
+      </div>
+
+      <div class="carousel-dots">
+        <span class="dot active" onclick="goToSlide(0)"></span>
+        <span class="dot" onclick="goToSlide(1)"></span>
+        <span class="dot" onclick="goToSlide(2)"></span>
+        <span class="dot" onclick="goToSlide(3)"></span>
+        <span class="dot" onclick="goToSlide(4)"></span>
+        <span class="dot" onclick="goToSlide(5)"></span>
+        <span class="dot" onclick="goToSlide(6)"></span>
+        <span class="dot" onclick="goToSlide(7)"></span>
+        <span class="dot" onclick="goToSlide(8)"></span>
+        <span class="dot" onclick="goToSlide(9)"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Coverage Section -->
+  <section class="coverage" id="coverage">
+    <div class="container">
+      <h2 class="section-title">Service Areas</h2>
+      <p class="section-subtitle">Proudly serving Central Texas communities</p>
+
+      <div class="coverage-grid">
+        <div class="coverage-item"><h3>Austin, Round Rock, Cedar Park, Georgetown & Surrounding Areas</h3></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us Section -->
+  <section class="why-us">
+    <div class="container">
+      <h2 class="section-title">Why Choose Us</h2>
+      <p class="section-subtitle">Premium quality meets ultimate convenience</p>
+
+      <div class="features-grid">
+        <div class="feature">
+          <span class="feature-icon">🏢</span>
+          <h3>Licensed & Insured</h3>
+          <p>Fully licensed LLC with comprehensive insurance coverage for your peace of mind.</p>
+        </div>
+
+        <div class="feature">
+          <span class="feature-icon">🚀</span>
+          <h3>Mobile Service</h3>
+          <p>We come directly to your home or office - no need to drive anywhere.</p>
+        </div>
+
+        <div class="feature">
+          <span class="feature-icon">⭐</span>
+          <h3>Premium Quality</h3>
+          <p>Professional-grade products and techniques for exceptional results.</p>
+        </div>
+
+        <div class="feature">
+          <span class="feature-icon">💼</span>
+          <h3>Professional Service</h3>
+          <p>Experienced detailers who treat your vehicle with the utmost care.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2 class="section-title">Get in Touch</h2>
+      <p class="section-subtitle">Ready to give your car the treatment it deserves?</p>
+
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="info-item">
+            <div class="info-icon">📱</div>
+            <div class="info-text">
+              <h4>Text / Call</h4>
+              <p>
+                <a class="contact-phone" href="tel:+15127362309">512-736-23-09</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon">💬</div>
+            <div class="info-text">
+              <h4>WhatsApp</h4>
+              <a
+                href="https://wa.me/15127362309?text=Hi!%20I%20would%20like%20to%20book%20mobile%20detailing."
+                target="_blank"
+                rel="noopener"
+                class="whatsapp-button"
+              >
+                Chat on WhatsApp
+              </a>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon">📧</div>
+            <div class="info-text">
+              <h4>Email</h4>
+              <p>mobiledetailingtx@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon">📍</div>
+            <div class="info-text">
+              <h4>Service Area</h4>
+              <p>Austin, Round Rock, Cedar Park, Georgetown & Surrounding Areas</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="social-links">
+  <a
+    href="https://www.instagram.com/mobile_detailing_tx"
+    class="social-link"
+    target="_blank"
+    rel="noopener"
+    aria-label="Open Instagram: mobile_detailing_tx"
+  >
+    <span>📷</span> Instagram: @mobile_detailing_tx
+  </a>
+</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="business-info">
+          <div class="business-badge"><span>🏢</span> Licensed LLC</div>
+          <div class="business-badge"><span>🛡️</span> Fully Insured</div>
+          <div class="business-badge"><span>⭐</span> Premium Service</div>
+        </div>
+        <p>&copy; 2026 Mobile Detailing TX, LLC. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+
+    // Add scroll-triggered animations
+    const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.animation = 'fadeInUp 0.8s ease-out forwards';
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.service-card, .feature, .coverage-item').forEach(el => observer.observe(el));
+
+    // Carousel functionality
+    let currentSlide = 0;
+    const totalSlides = 10;
+    const track = document.querySelector('.carousel-track');
+    const dots = document.querySelectorAll('.dot');
+
+    function updateCarousel() {
+      track.style.transform = `translateX(-${currentSlide * 100}%)`;
+      dots.forEach((dot, index) => dot.classList.toggle('active', index === currentSlide));
+    }
+
+    function moveCarousel(direction) {
+      currentSlide += direction;
+      if (currentSlide < 0) currentSlide = totalSlides - 1;
+      else if (currentSlide >= totalSlides) currentSlide = 0;
+      updateCarousel();
+    }
+
+    function goToSlide(index) {
+      currentSlide = index;
+      updateCarousel();
+    }
+
+    let autoPlayInterval = setInterval(() => moveCarousel(1), 4000);
+
+    const carouselContainer = document.querySelector('.carousel-container');
+    carouselContainer.addEventListener('mouseenter', () => clearInterval(autoPlayInterval));
+    carouselContainer.addEventListener('mouseleave', () => {
+      autoPlayInterval = setInterval(() => moveCarousel(1), 4000);
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowLeft') moveCarousel(-1);
+      else if (e.key === 'ArrowRight') moveCarousel(1);
+    });
+
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    carouselContainer.addEventListener('touchstart', (e) => {
+      touchStartX = e.changedTouches[0].screenX;
+    });
+
+    carouselContainer.addEventListener('touchend', (e) => {
+      touchEndX = e.changedTouches[0].screenX;
+      handleSwipe();
+    });
+
+    function handleSwipe() {
+      if (touchEndX < touchStartX - 50) moveCarousel(1);
+      if (touchEndX > touchStartX + 50) moveCarousel(-1);
+    }
+  </script>
+</body>
+</html>
