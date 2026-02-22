@@ -697,4 +697,16 @@
       const resp = await fetch(action, {
         method: 'POST', body: new FormData(form),
         headers: { 'Accept': 'application/json' }
-    
+          });
+      if (resp.ok) showSuccess();
+      else { btn.textContent = 'Error — please try again'; btn.disabled = false; }
+    } catch { btn.textContent = 'Error — please try again'; btn.disabled = false; }
+  });
+
+  function showSuccess() {
+    document.getElementById('formContent').style.display = 'none';
+    document.getElementById('formSuccess').style.display = 'block';
+  }
+</script>
+</body>
+</html>
