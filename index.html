@@ -59,6 +59,10 @@
     .btn-red:hover { background: var(--red-dark); transform: translateY(-2px); }
     .btn-ghost { border: 2px solid rgba(255,255,255,.35); color: #fff; padding: 13px 32px; border-radius: 8px; font-weight: 600; font-size: 14px; letter-spacing: .06em; text-transform: uppercase; text-decoration: none; display: inline-block; transition: all .2s; }
     .btn-ghost:hover { border-color: rgba(255,255,255,.8); background: rgba(255,255,255,.08); }
+    .btn-phone { border: 2px solid rgba(255,255,255,.35); color: #fff; padding: 13px 24px; border-radius: 8px; font-weight: 600; font-size: 14px; text-decoration: none; display: inline-block; transition: all .2s; white-space: nowrap; }
+    .btn-phone:hover { border-color: #fff; background: rgba(255,255,255,.1); }
+    .btn-whatsapp { background: #25d366; color: #fff; padding: 15px 24px; border-radius: 8px; font-weight: 700; font-size: 14px; text-decoration: none; display: inline-block; box-shadow: 0 4px 20px rgba(37,211,102,.35); transition: all .2s; white-space: nowrap; }
+    .btn-whatsapp:hover { background: #1db954; transform: translateY(-2px); }
     .hero-badges { display: flex; gap: 10px; flex-wrap: wrap; }
     .hero-badge { background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.18); color: rgba(255,255,255,.85); padding: 7px 14px; border-radius: 8px; font-size: 13px; font-weight: 500; }
     .hero-logo { display: flex; justify-content: center; align-items: center; }
@@ -149,14 +153,15 @@
     .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
     .form-group { margin-bottom: 18px; }
     .form-group label { display: block; font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin-bottom: 7px; }
-    .form-group input, .form-group select, .form-group textarea { width: 100%; background: var(--bg); border: 1.5px solid var(--border); color: var(--text); padding: 12px 14px; border-radius: 8px; font-family: 'DM Sans', sans-serif; font-size: 15px; transition: border-color .2s, box-shadow .2s; outline: none; appearance: none; -webkit-appearance: none; }
-    .form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--blue); box-shadow: 0 0 0 3px rgba(26,63,160,.1); }
+    .form-group input:not([type="checkbox"]), .form-group select, .form-group textarea { width: 100%; background: var(--bg); border: 1.5px solid var(--border); color: var(--text); padding: 12px 14px; border-radius: 8px; font-family: 'DM Sans', sans-serif; font-size: 15px; transition: border-color .2s, box-shadow .2s; outline: none; appearance: none; -webkit-appearance: none; }
+    .form-group input:not([type="checkbox"]):focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--blue); box-shadow: 0 0 0 3px rgba(26,63,160,.1); }
     .form-group select { cursor: pointer; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='7'%3E%3Cpath d='M0 0l6 7 6-7z' fill='%236b7280'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 14px center; background-color: var(--bg); padding-right: 38px; }
     .form-group textarea { resize: vertical; min-height: 90px; }
     .addons-check { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
-    .check-item { display: flex; align-items: center; gap: 10px; padding: 11px 14px; background: var(--bg); border: 1.5px solid var(--border); border-radius: 8px; cursor: pointer; transition: border-color .2s, background .2s; font-size: 14px; color: var(--text); font-weight: 500; }
+    .check-item { display: flex; align-items: center; gap: 10px; padding: 11px 14px; background: var(--bg); border: 1.5px solid var(--border); border-radius: 8px; cursor: pointer; transition: border-color .2s, background .2s; font-size: 14px; color: var(--text); font-weight: 500; user-select: none; -webkit-user-select: none; }
     .check-item:hover { border-color: var(--blue); background: rgba(26,63,160,.04); }
-    .check-item input[type="checkbox"] { width: 16px; height: 16px; accent-color: var(--blue); flex-shrink: 0; cursor: pointer; }
+    .check-item:has(input:checked) { border-color: var(--blue); background: rgba(26,63,160,.08); }
+    .check-item input[type="checkbox"] { width: 18px; height: 18px; min-width: 18px; accent-color: var(--blue); flex-shrink: 0; cursor: pointer; margin: 0; padding: 0; appearance: auto; -webkit-appearance: checkbox; }
     .form-submit { width: 100%; background: var(--red); color: #fff; border: none; padding: 16px; border-radius: 10px; font-family: 'DM Sans', sans-serif; font-weight: 700; font-size: 15px; letter-spacing: .08em; text-transform: uppercase; cursor: pointer; transition: all .2s; margin-top: 6px; box-shadow: 0 4px 20px rgba(214,43,43,.3); }
     .form-submit:hover { background: var(--red-dark); transform: translateY(-2px); }
     .form-note { text-align: center; font-size: 12px; color: var(--muted); margin-top: 14px; }
@@ -214,7 +219,7 @@
   <span class="topbar-sep">|</span>
   <a href="https://wa.me/15127362309?text=Hi!%20I%20would%20like%20to%20book%20mobile%20detailing." target="_blank" rel="noopener">💬 WhatsApp</a>
   <span class="topbar-sep">|</span>
-  <a href="mailto:mobiledetailingtx@gmail.com">✉️ mobiledetailingtx@gmail.com</a>
+  <a href="/cdn-cgi/l/email-protection#630e0c010a0f06070617020a0f0a0d04171b23040e020a0f4d000c0e">✉️ <span class="__cf_email__" data-cfemail="b6dbd9d4dfdad3d2d3c2d7dfdadfd8d1c2cef6d1dbd7dfda98d5d9db">[email&#160;protected]</span></a>
   <span class="topbar-sep">|</span>
   <a href="https://www.instagram.com/mobile_detailing_tx" target="_blank" rel="noopener">📷 @mobile_detailing_tx</a>
 </div>
@@ -240,7 +245,8 @@
       <p class="hero-sub">Professional mobile detailing at your home or office. Serving Austin, Round Rock, Cedar Park &amp; Georgetown.</p>
       <div class="hero-btns">
         <a href="#booking" class="btn-red">Book Now</a>
-        <a href="#services" class="btn-ghost">View Packages</a>
+        <a href="tel:+15127362309" class="btn-phone">📱 512-736-23-09</a>
+        <a href="https://wa.me/15127362309?text=Hi!%20I%20would%20like%20to%20book%20mobile%20detailing." target="_blank" rel="noopener" class="btn-whatsapp">💬 WhatsApp</a>
       </div>
       <div class="hero-badges">
         <span class="hero-badge">🔌 We bring all equipment</span>
@@ -468,7 +474,7 @@
         </div>
         <div class="contact-row">
           <div class="contact-icon">📧</div>
-          <div><h5>Email</h5><a href="mailto:mobiledetailingtx@gmail.com">mobiledetailingtx@gmail.com</a></div>
+          <div><h5>Email</h5><a href="/cdn-cgi/l/email-protection#b2dfddd0dbded7d6d7c6d3dbdedbdcd5c6caf2d5dfd3dbde9cd1dddf"><span class="__cf_email__" data-cfemail="e984868b80858c8d8c9d88808580878e9d91a98e84888085c78a8684">[email&#160;protected]</span></a></div>
         </div>
         <div class="contact-row">
           <div class="contact-icon">📷</div>
@@ -479,7 +485,7 @@
       <div class="form-card reveal reveal-delay-1">
         <div id="formContent">
           <div class="form-title">Request a Booking</div>
-          <form id="bookingForm" action="https://formspree.io/f/mzdajngq" method="POST">
+          <form id="bookingForm" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
             <input type="hidden" name="_subject" value="New Booking Request — Mobile Detailing TX">
             <input type="hidden" name="_replyto" id="hiddenReply">
             <div class="form-row">
@@ -583,7 +589,7 @@
   </div>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
   var reveals = document.querySelectorAll('.reveal');
   var observer = new IntersectionObserver(function(entries) {
     entries.forEach(function(e) { if (e.isIntersecting) e.target.classList.add('visible'); });
@@ -650,19 +656,3 @@
       if (resp.ok) {
         showSuccess();
       } else {
-        btn.textContent = 'Error — please try again';
-        btn.disabled = false;
-      }
-    }).catch(function() {
-      btn.textContent = 'Error — please try again';
-      btn.disabled = false;
-    });
-  });
-
-  function showSuccess() {
-    document.getElementById('formContent').style.display = 'none';
-    document.getElementById('formSuccess').style.display = 'block';
-  }
-</script>
-</body>
-</html>
