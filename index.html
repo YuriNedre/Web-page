@@ -630,9 +630,15 @@ form.addEventListener('submit', function(e) {
     headers: { 'Accept': 'application/json' }
   }).then(function(resp) {
     if (resp.ok) {
-      document.getElementById('formContent').style.display = 'none';
-      document.getElementById('formSuccess').style.display = 'block';
-    } else {
+
+  // Google Ads Conversion
+  gtag('event', 'conversion', {
+    'send_to': 'AW-17969716181/bgxFCMTY44kcENW30PhC'
+  });
+
+  document.getElementById('formContent').style.display = 'none';
+  document.getElementById('formSuccess').style.display = 'block';
+} else {
       btn.textContent = 'Error — please try again';
       btn.disabled = false;
     }
