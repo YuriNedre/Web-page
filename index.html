@@ -239,13 +239,13 @@ gtag('config', 'AW-17969716181');
 <body>
 
 <div class="topbar">
-  <a href="tel:+15127362309"
-onclick="return gtag_report_conversion('tel:+15127362309');">
+ <a href="tel:+15127362309"
+onclick="return gtag_report_phone_conversion('tel:+15127362309');">
 📱 512-736-23-09
 </a>
   <span class="topbar-sep">|</span>
-  <a href="https://wa.me/15127362309?text=Hi!%20I%20would%20like%20to%20book%20mobile%20detailing."
-onclick="return gtag_report_conversion('https://wa.me/15127362309?text=Hi!%20I%20would%20like%20to%20book%20mobile%20detailing.');"
+<a href="https://wa.me/15127362309?text=Hi!%20I%20would%20like%20to%20book%20mobile%20detailing."
+onclick="return gtag_report_whatsapp_conversion('https://wa.me/15127362309?text=Hi!%20I%20would%20like%20to%20book%20mobile%20detailing.');"
 target="_blank" rel="noopener">
 💬 WhatsApp
 </a>
@@ -507,7 +507,7 @@ onclick="return gtag_report_conversion('tel:+15127362309');">
         <div class="contact-row">
           <div class="contact-icon">💬</div>
           <div><h5>WhatsApp</h5><a href="https://wa.me/15127362309?text=Hi!%20I%20would%20like%20to%20book%20mobile%20detailing."
-onclick="return gtag_report_conversion('https://wa.me/15127362309?text=Hi!%20I%20would%20like%20to%20book%20mobile%20detailing.');"
+onclick="return gtag_report_whatsapp_conversion('https://wa.me/15127362309?text=Hi!%20I%20would%20like%20to%20book%20mobile%20detailing.');"
 target="_blank" rel="noopener">
 Start a chat
 </a></div>
@@ -697,6 +697,37 @@ form.addEventListener('submit', function(e) {
     btn.disabled = false;
   });
 });
+</script>
+<script>
+function gtag_report_phone_conversion(url) {
+  var callback = function () {
+    if (typeof(url) !== 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+    'send_to': 'AW-17969716181/E_dLCM_47okcENW30PhC',
+    'value': 1.0,
+    'currency': 'USD',
+    'event_callback': callback
+  });
+  return false;
+}
+
+function gtag_report_whatsapp_conversion(url) {
+  var callback = function () {
+    if (typeof(url) !== 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+    'send_to': 'AW-17969716181/6kjcCPSs74kcENW30PhC',
+    'value': 1.0,
+    'currency': 'USD',
+    'event_callback': callback
+  });
+  return false;
+}
 </script>
 </body>
 </html>
