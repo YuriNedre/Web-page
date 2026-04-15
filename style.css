@@ -949,3 +949,136 @@ body {
 .pricing-note-box-full {
   grid-column: 1 / -1;
 }
+.topbar-inner {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.topbar-inner a {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  color: rgba(255,255,255,0.9);
+  font-weight: 500;
+  transition: opacity 0.2s ease;
+}
+
+.topbar-inner a:hover {
+  opacity: 0.7;
+}
+
+.topbar-email,
+.topbar-instagram {
+  opacity: 0.85;
+}
+
+@media (max-width: 768px) {
+  .topbar-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}
+.topbar {
+  background: #ffffff;
+  border-bottom: 1px solid #eee;
+}
+
+.topbar-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  padding: 8px 0;
+  flex-wrap: wrap;
+}
+
+.topbar-inner a {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a1a1a; /* ЧЕРНЫЙ — чтобы было видно */
+  text-decoration: none;
+}
+
+.topbar-inner a:hover {
+  color: #e53935;
+}
+
+.topbar-whatsapp {
+  background: #25D366;
+  color: white !important;
+  padding: 6px 14px;
+  border-radius: 20px;
+}
+
+.topbar-whatsapp:hover {
+  opacity: 0.9;
+}
+.footer-contacts {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.footer-contacts a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.footer-contacts a:hover {
+  text-decoration: underline;
+}
+footer {
+  background: var(--navy);
+  color: var(--white);
+  padding: 40px 0;
+  text-align: center;
+}
+
+.footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+.footer-logo img {
+  height: 54px;
+  width: auto;
+}
+
+.footer-contacts {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-contacts a {
+  color: #ffffff !important;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.footer-contacts a:hover {
+  color: #fbbf24 !important;
+}
+
+.footer-copy {
+  color: rgba(255,255,255,0.78);
+  font-size: 14px;
+}
