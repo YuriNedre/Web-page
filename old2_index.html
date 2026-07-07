@@ -31,13 +31,9 @@
       "Round Rock TX",
       "Cedar Park TX",
       "Georgetown TX",
-      "Pflugerville TX",
-      "Leander TX",
-      "Hutto TX",
-      "Lakeway TX",
-      "West Lake Hills TX"
+      "Pflugerville TX"
     ],
-    "description": "Professional mobile car detailing at your home or office. Interior detailing, exterior wash, full detail, polishing, buffing, paint correction, scratch removal, paint restoration, car waxing, ceramic coating, truck detailing, boat detailing and RV detailing.",
+    "description": "Professional mobile car detailing at your home or office. Interior detailing, exterior wash, full detail, polishing, paint correction, wax and ceramic coating.",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Round Rock",
@@ -91,7 +87,6 @@
       <ul class="site-nav-links">
         <li><a href="#pricing">Pricing</a></li>
         <li><a href="#paint-correction">Polishing</a></li>
-        <li><a href="#truck-boat-rv">Truck / Boat / RV</a></li>
         <li><a href="#gallery">Gallery</a></li>
         <li><a href="#coverage">Areas</a></li>
         <li><a href="#booking" class="site-nav-cta">Book Now</a></li>
@@ -276,19 +271,19 @@
     <div class="container">
       <div class="reveal">
         <div class="section-label">Polishing</div>
-        <h2 class="section-title">Paint Correction, <span>Polishing & Ceramic Coating</span></h2>
+        <h2 class="section-title">Paint Correction & <span>Protection</span></h2>
         <div class="divider"></div>
         <p class="section-subtitle">
-          Professional paint correction, car polishing, buffing, scratch removal, ceramic coating, paint protection, paint restoration, and premium car wax applications to make your vehicle shine.
+          Professional polishing, scratch removal, ceramic protection, and premium wax applications to make your vehicle shine.
         </p>
       </div>
 
       <div class="paint-correction-grid reveal reveal-delay-1">
         <div class="paint-card">
           <div class="paint-card-icon">✨</div>
-          <h3>Paint Polishing & Buffing</h3>
+          <h3>Paint Polishing</h3>
           <p>
-            Professional car polishing and machine buffing to restore gloss, improve depth, remove light oxidation, and refresh the overall appearance of your vehicle’s paint.
+            Professional polishing to restore gloss, improve depth, and refresh the overall appearance of your vehicle’s paint.
           </p>
         </div>
 
@@ -296,7 +291,7 @@
           <div class="paint-card-icon">🛠️</div>
           <h3>Scratch Removal</h3>
           <p>
-            Light to moderate scratch removal, swirl mark removal, and paint correction depending on the condition of the surface.
+            Light to moderate scratch reduction and paint correction depending on the condition of the surface.
           </p>
         </div>
 
@@ -304,15 +299,15 @@
           <div class="paint-card-icon">🛡️</div>
           <h3>Ceramic Coating</h3>
           <p>
-            Ceramic coating, paint protection, and long-lasting hydrophobic protection to help preserve shine and improve water beading.
+            Protective ceramic coating application to help preserve shine, improve water beading, and add longer-lasting protection.
           </p>
         </div>
 
         <div class="paint-card">
           <div class="paint-card-icon">💎</div>
-          <h3>Car Wax & Butter Wax</h3>
+          <h3>Wax & Butter Wax</h3>
           <p>
-            Premium car wax and butter-wax application for enhanced gloss, richer color, paint protection, and a deep showroom shine.
+            Premium wax and butter-wax application for enhanced gloss, richer color, and a deep showroom shine.
           </p>
         </div>
       </div>
@@ -332,64 +327,6 @@
           or
           <a href="mailto:mobiledetailingtx@gmail.com?subject=Polishing%20Estimate%20Request">email</a>.
         </p>
-      </div>
-
-      <div class="pricing-note-box reveal reveal-delay-2">
-        <h3>Mobile Paint Correction, Ceramic Coating & Waxing</h3>
-        <p>
-          Mobile Detailing TX provides professional mobile paint correction, paint polishing, machine buffing,
-          scratch removal, swirl mark removal, paint restoration, ceramic coating, car waxing, and paint protection
-          in Austin, Round Rock, Cedar Park, Georgetown, Pflugerville, Leander, Hutto, Lakeway, West Lake Hills,
-          and nearby Central Texas areas.
-        </p>
-      </div>
-    </div>
-  </section>
-
-
-  <section class="paint-correction" id="truck-boat-rv">
-    <div class="container">
-      <div class="reveal">
-        <div class="section-label">Additional Services</div>
-        <h2 class="section-title">Truck, Boat & <span>RV Detailing</span></h2>
-        <div class="divider"></div>
-        <p class="section-subtitle">
-          Mobile detailing, washing, cleaning, polishing, waxing, paint restoration, and ceramic coating services for trucks, boats, RVs, motorhomes, campers, and pickup trucks.
-        </p>
-      </div>
-
-      <div class="paint-correction-grid reveal reveal-delay-1">
-        <div class="paint-card">
-          <div class="paint-card-icon">🚚</div>
-          <h3>Truck Detailing & Washing</h3>
-          <p>
-            Mobile truck detailing, truck washing, truck cleaning, pickup truck detailing, truck polishing, waxing, and paint protection at your location.
-          </p>
-        </div>
-
-        <div class="paint-card">
-          <div class="paint-card-icon">🚤</div>
-          <h3>Boat Detailing & Cleaning</h3>
-          <p>
-            Boat detailing, boat washing, boat cleaning, boat polishing, oxidation removal, waxing, and ceramic coating service for boats and marine vehicles.
-          </p>
-        </div>
-
-        <div class="paint-card">
-          <div class="paint-card-icon">🚐</div>
-          <h3>RV Detailing & Washing</h3>
-          <p>
-            RV detailing, RV washing, RV cleaning, motorhome detailing, camper detailing, RV polishing, waxing, paint restoration, and ceramic coating.
-          </p>
-        </div>
-
-        <div class="paint-card">
-          <div class="paint-card-icon">📍</div>
-          <h3>Mobile Service</h3>
-          <p>
-            We come to your home, office, marina, storage facility, campsite, or parking location with the equipment needed for the service.
-          </p>
-        </div>
       </div>
     </div>
   </section>
@@ -587,6 +524,16 @@
 
             <div class="form-row">
               <div class="form-group">
+                <label for="condition">Vehicle Condition</label>
+                <select id="condition" name="vehicle_condition">
+                  <option value="" disabled selected>Select condition...</option>
+                  <option>Lightly soiled (routine)</option>
+                  <option>Moderately soiled</option>
+                  <option>Heavily soiled</option>
+                </select>
+              </div>
+
+              <div class="form-group">
                 <label for="date">Preferred Date</label>
                 <input type="date" id="date" name="preferred_date">
               </div>
@@ -599,7 +546,6 @@
                 <label class="check-item"><input type="checkbox" name="addon_odor" value="Yes"> 🌬️ Unpleasant Odor</label>
                 <label class="check-item"><input type="checkbox" name="addon_engine_bay" value="Yes"> 🔧 Engine Bay</label>
                 <label class="check-item"><input type="checkbox" name="addon_liquid_spill" value="Yes"> 💧 Liquid Spill</label>
-                <label class="check-item"><input type="checkbox" name="addon_wax" value="Yes"> 🛡️ Wax</label>
               </div>
             </div>
 
@@ -639,7 +585,6 @@
         <a href="mailto:mobiledetailingtx@gmail.com">✉️ mobiledetailingtx@gmail.com</a>
         <a href="https://www.instagram.com/mobile_detailing_tx" target="_blank" rel="noopener">📸 Instagram</a>
         <a href="#paint-correction">✨ Polishing</a>
-        <a href="#truck-boat-rv">🚚 Truck / Boat / RV</a>
       </div>
 
       <div class="footer-copy">
